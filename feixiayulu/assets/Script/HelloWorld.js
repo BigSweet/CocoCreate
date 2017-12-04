@@ -75,7 +75,6 @@ export default class HelloWorld extends cc.Component {
         console.log("==>",url);
         cc.loader.load(loadData, function (err, texture) {
             this.imgCenter.spriteFrame = new cc.SpriteFrame(texture);
-            this.imgCenter.node.setContentSize(new cc.Size(630,550));
             
         }.bind(this));
 

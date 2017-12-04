@@ -1,10 +1,11 @@
 {
   "appKey": "",
   "appSecret": "",
+  "encryptJs": true,
   "excludeScenes": [],
   "includeAnySDK": false,
   "includeSDKBox": false,
-  "inlineSpriteFrames": true,
+  "inlineSpriteFrames": false,
   "inlineSpriteFrames_native": true,
   "jailbreakPlatform": false,
   "md5Cache": true,
@@ -22,5 +23,6 @@
   "renderMode": "0",
   "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
   "title": "ledidiantai",
-  "webOrientation": "auto"
+  "webOrientation": "portrait",
+  "xxteaKey": "7fd13ba5-525a-48"
 }

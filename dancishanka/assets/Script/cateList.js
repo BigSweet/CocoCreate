@@ -39,7 +39,7 @@ export default class cateList extends cc.Component {
                                         
         
     }
-
+f
     clickBack(){
         cc.systemEvent.emit("back_click", "back");
     }

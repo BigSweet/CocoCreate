@@ -5,6 +5,5 @@ export default class Game {
         new AudioGroup(s);
         console.log(s);
     }
-
     
 }

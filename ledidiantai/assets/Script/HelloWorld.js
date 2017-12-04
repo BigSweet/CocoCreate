@@ -1,6 +1,7 @@
 import lediModel from "./model/lediModel.js";
 import Game from "./audio/Game";
 import WeixinInstance from "./weixin/WeixinInstance";
+import { WeixinAudio } from "./audio/WeixinAudio";
 
 
 const { ccclass, property } = cc._decorator;
@@ -31,11 +32,19 @@ export default class HelloWorld extends cc.Component {
     @property(cc.Sprite)
     imgStop = null;
 
+
+        /**@type {cc.Sprite} */
+        @property(cc.Sprite)
+        imgNext = null;
+
+        /**@type {cc.Sprite} */
+        @property(cc.Sprite)
+        imgPre = null;
+
+
     /**@type {cc.Label} */
     @property(cc.Label)
     mMusicTime = null;
-
-    isFirst = true;
 
     /**@type {cc.Label} */
     @property(cc.Label)
@@ -56,6 +65,9 @@ export default class HelloWorld extends cc.Component {
 
       startAnima=true;
     onLoad() {
+        cc.log(document.body.clientWidth,document.body.clientHeight);
+        cc.view.setFrameSize(document.body.clientWidth,document.body.clientHeight);
+
         WeixinInstance.instance.initialize();
         cc.systemEvent.on("item_click",this.itemClickHandler,this);
         cc.systemEvent.on("back_click",this.backClick,this);
@@ -80,9 +92,9 @@ export default class HelloWorld extends cc.Component {
         console.log(details);
         this.index=0;
         this.audio = null
-        this.mmm.load();
+        this.mmm.pause();
         this.isplay = false;
-        lediModel.__instance.getIdWordList(this.success, this,event.detail);
+        lediModel.instance.getIdWordList(this.success, this,details);
     }
 
     success(result) {
@@ -94,14 +106,9 @@ export default class HelloWorld extends cc.Component {
         this.startAnimation();
         console.log(result);
 
-        if (this.isFirst) {
-            this.isFirst = false;
-            WeixinInstance.instance._weixinJSSDK.getWeiXinConfig(function () {
-                this.getAudio();
-            }.bind(this));
-        } else {
-            this.getAudio();
-        }
+
+        new WeixinAudio(this.getAudio,this);
+ 
 
         this.MusicName.string = result.data.radio_list[this.index].radio_en_desc;
 
@@ -117,7 +124,7 @@ export default class HelloWorld extends cc.Component {
 
     clickButton(e) {
 
-
+    
         cc.log("=======>", e);
         let result = lediModel.instance.result;
 
@@ -127,7 +134,10 @@ export default class HelloWorld extends cc.Component {
     }
 
     updateProgress(s) {
-        this.mProgressBar.progress = s;
+        cc.log(s);
+        if(!isNaN(s)){
+            this.mProgressBar.progress = s;
+        }
     }
     startAnimation() {
         this.startAnima=true;
@@ -139,7 +149,6 @@ export default class HelloWorld extends cc.Component {
 
     mmm = null;
     getAudio() {
-
         let result = lediModel.instance.result;
         if (this.audio == null) {
             let mp3audio = result.data.radio_list[this.index].radio_mp3;
@@ -149,15 +158,24 @@ export default class HelloWorld extends cc.Component {
             this.mmm = new Audio(mp3audio);
             this.mmm.addEventListener("canplay", function (e) {
                 let time = this.mmm.duration;
-               
-                var m = parseInt(time / 60);
-                var s = time % 60;
-                if (Math.round(s) >= 10) {
-                    this.mMusicTime.string = "0" + m + ":" + Math.round(s);
-                } else {
-                    this.mMusicTime.string = "0" + m + ":0" + Math.round(s);
+                if(!isNaN(time)){
+                    console.log("你好");
+                    var m = parseInt(time / 60);
+                    var s = time % 60;
+                    if (Math.round(s) >= 10) {
+                        this.mMusicTime.string = "0" + m + ":" + Math.round(s);
+                    } else {
+                        this.mMusicTime.string = "0" + m + ":0" + Math.round(s);
+                    }
                 }
 
+            }.bind(this));
+
+            this.mmm.addEventListener("ended",function(e){
+                    console.log("播放结束");
+                
+                        this.clickNext();
+                    
             }.bind(this));
 
             this.mmm.addEventListener("timeupdate", function (e) {
@@ -174,6 +192,7 @@ export default class HelloWorld extends cc.Component {
                 }
 
             }.bind(this));
+
             this.play();
 
         } else {
@@ -182,6 +201,7 @@ export default class HelloWorld extends cc.Component {
     }
 
 
+    iscanClick=true;
 
 
     play() {
@@ -204,18 +224,41 @@ export default class HelloWorld extends cc.Component {
 
 
     clickPre() {
-
-        if (this.index == 0) {
-
-        } else {
-            //startanimation
-
-            --this.index;
-            this.setimg();
+        if(this.iscanClick){
+            this.setInter();
+            if (this.index == 0) {
+                this.index=19;
+                this.setimg();
+            } else {
+                //startanimation
+                --this.index;
+                this.setimg();
+            }
         }
+      
 
     }
 
+    _timeoutId = 0;
+
+    setInter(){
+        this.iscanClick=false;
+
+
+        setTimeout(() => {
+            this.iscanClick=true;
+        }, 2000);
+       /*  this.imgNext.node.getComponent(cc.Button).interactable = false;
+        this.imgPre.node.getComponent(cc.Button).interactable = false; 
+        
+        clearTimeout(this._timeoutId);
+
+        this._timeoutId = setTimeout(() => {
+            this.imgNext.node.getComponent(cc.Button).interactable = true;
+            this.imgPre.node.getComponent(cc.Button).interactable = true;
+            clearTimeout(this._timeoutId);
+            }, 3000); */
+    }
     setimg() {
         let result = lediModel.instance.result;
         this.audio = null;
@@ -238,16 +281,21 @@ export default class HelloWorld extends cc.Component {
     }
 
     clickNext() {
-        if (this.index == 19) {
-            lediModel.instance.getWordList(this.success, this);
-            this.audio = null
-            this.mmm.load();
-            this.isplay = false;
-        } else {
-            //startanimation
-            ++this.index;
-            this.setimg();
+        if(this.iscanClick){
+            this.setInter();
+            this.updateProgress(0);
+            if (this.index == 19) {
+                lediModel.instance.getWordList(this.success, this);
+                this.audio = null
+                this.mmm.load();
+                this.isplay = false;
+            } else {
+                //startanimation
+                ++this.index;
+                this.setimg();
+            }
         }
+      
 
     }
 
