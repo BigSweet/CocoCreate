@@ -26,26 +26,28 @@ export default class HelloWorld extends cc.Component {
     index = 0;
     _game = null;
 
-    isFirst=true;
-
+    isFirst = true;
+    iscanClick = true;
     onLoad() {
+        cc.log(document.body.clientWidth, document.body.clientHeight);
+        cc.view.setFrameSize(document.body.clientWidth, document.body.clientHeight);
         WeixinInstance.instance.initialize();
         var _self = this;
-        cc.systemEvent.on("item_click",this.itemClickHandler,this);
+        cc.systemEvent.on("item_click", this.itemClickHandler, this);
     }
 
 
-    backClick(){
-        this.ClassNode.active=true;
+    backClick() {
+        this.ClassNode.active = true;
     }
 
-    itemClickHandler(/**@type {cc.Event.EventCustom}*/event){
-        this.ClassNode.active=false;
+    itemClickHandler(/**@type {cc.Event.EventCustom}*/event) {
+        this.ClassNode.active = false;
         let details = event.detail;
         console.log(details);
-        this.index=0;
-        this.node.active=true;
-        WordListModel.instance.getIdWordList(this.success, this,event.detail);
+        this.index = 0;
+        this.node.active = true;
+        WordListModel.instance.getIdWordList(this.success, this, event.detail);
     }
 
     success(result) {
@@ -57,13 +59,13 @@ export default class HelloWorld extends cc.Component {
         this.imgCenter.node.runAction(seq);
         console.log(result);
 
-        if(this.isFirst){
-            this.isFirst=false;
+        if (this.isFirst) {
+            this.isFirst = false;
             WeixinInstance.instance._weixinJSSDK.getWeiXinConfig(function () {
                 console.log("weixincallback");
                 this._game = new Game(result.data.quotation_list[this.index].quotation_mp3_en);
             }.bind(this));
-        }else{
+        } else {
             this._game = new Game(result.data.quotation_list[this.index].quotation_mp3_en);
         }
         this.MusicDes.string = result.data.quotation_list[this.index].quotation_desc;
@@ -71,22 +73,22 @@ export default class HelloWorld extends cc.Component {
 
 
         let url = result.data.quotation_list[this.index].quotation_pic;
-        let loadData = {url:url,type:'png'};
-        console.log("==>",url);
+        let loadData = { url: url, type: 'png' };
+        console.log("==>", url);
         cc.loader.load(loadData, function (err, texture) {
             this.imgCenter.spriteFrame = new cc.SpriteFrame(texture);
-            
+
         }.bind(this));
 
 
-     
+
     }
- 
-   
-   /*  clickCLass(){
-        cc.log("=======>", "classclick");
-        this.ClassNode.active=true;
-    } */
+
+
+    /*  clickCLass(){
+         cc.log("=======>", "classclick");
+         this.ClassNode.active=true;
+     } */
 
     update(dt) {
 
@@ -94,29 +96,34 @@ export default class HelloWorld extends cc.Component {
 
 
     clickButton(e) {
-        var seq = cc.sequence(cc.scaleTo(0.1,1.2, 1.2), cc.scaleTo(0.1, 1, 1));
-        // var action = cc.scaleTo(0.1, 1.2,1.2);
-        this.imgCenter.node.runAction(seq);
-        cc.log("=======>", e);
-        let result = WordListModel.instance.result;
-        this._game = new Game(result.data.quotation_list[this.index].quotation_mp3_en);
-
-
+        if (this.iscanClick) {
+            this.setInter();
+            var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
+            // var action = cc.scaleTo(0.1, 1.2,1.2);
+            this.imgCenter.node.runAction(seq);
+            cc.log("=======>", e);
+            let result = WordListModel.instance.result;
+            this._game = new Game(result.data.quotation_list[this.index].quotation_mp3_en);
+        }
 
     }
 
 
     clickPre() {
-
-        if (this.index == 0) {
-
-        } else {
-            var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
-            // var action = cc.scaleTo(0.1, 1.2,1.2);
-            this.imgCenter.node.runAction(seq);
-            --this.index;
-            this.setimg();
+        if (this.iscanClick) {
+            this.setInter();
+            if (this.index == 0) {
+                this.index=19;
+                this.setimg();
+            } else {
+                var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
+                // var action = cc.scaleTo(0.1, 1.2,1.2);
+                this.imgCenter.node.runAction(seq);
+                --this.index;
+                this.setimg();
+            }
         }
+
 
     }
 
@@ -127,32 +134,50 @@ export default class HelloWorld extends cc.Component {
         this.MusicName.string = result.data.quotation_list[this.index].quotation_en_desc;
 
         let url = result.data.quotation_list[this.index].quotation_pic;
-        let loadData = {url:url,type:'png'};
-        console.log("---->",url);
-        cc.loader.load(loadData,function(err, texture){
+        let loadData = { url: url, type: 'png' };
+        console.log("---->", url);
+        cc.loader.load(loadData, function (err, texture) {
             this.imgCenter.spriteFrame = new cc.SpriteFrame(texture);
         }.bind(this));
 
-        
-    }
-    centerImgClick() {
-        var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
-        // var action = cc.scaleTo(0.1, 1.2,1.2);
-        this.imgCenter.node.runAction(seq);
-        let result = WordListModel.instance.result;
-        this._game = new Game(result.data.quotation_list[this.index].quotation_mp3_en);
+
     }
 
-    clickNext() {
-        if (this.index == 19) {
-            WordListModel.instance.getWordList(this.success, this);
-        } else {
+    setInter() {
+        this.iscanClick = false;
+        setTimeout(() => {
+            this.iscanClick = true;
+        }, 1000);
+    }
+    centerImgClick() {
+        if (this.iscanClick) {
             var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
             // var action = cc.scaleTo(0.1, 1.2,1.2);
             this.imgCenter.node.runAction(seq);
-            ++this.index;
-            this.setimg();
+            let result = WordListModel.instance.result;
+            this._game = new Game(result.data.quotation_list[this.index].quotation_mp3_en);
+
+            this.setInter();
         }
+
+      
+    }
+
+    clickNext() {
+        if (this.iscanClick) {
+            if (this.index == 19) {
+                WordListModel.instance.getWordList(this.success, this);
+            } else {
+                var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
+                // var action = cc.scaleTo(0.1, 1.2,1.2);
+                this.imgCenter.node.runAction(seq);
+                ++this.index;
+                this.setimg();
+            }
+            this.setInter();
+            
+        }
+      
 
     }
 

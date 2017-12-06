@@ -23,7 +23,7 @@ export default class Item extends cc.Component {
         cc.loader.load(loadData, function (err, texture) {
             this.imgCenter.spriteFrame = new cc.SpriteFrame(texture);
         }.bind(this));
-        this.ClassName.string = data.content.link_list[0].text_list[0];
+        // this.ClassName.string = data.content.link_list[0].text_list[0];
     }
 
 

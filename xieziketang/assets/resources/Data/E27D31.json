@@ -1,0 +1,15 @@
+{
+  "endToScene":"E27_Menu",
+  "games":
+  [
+    {
+      "name":"戳泡泡1",
+      "words":["bun","nun","run","sun"],
+      "urls":["Texture/D31_u|bun1","Texture/D31_u|nun1","Texture/D31_u|run1","Texture/D31_u|sun1"],
+      "scale":[1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+      "dir":"pub",
+      "popMusic":"effect_pop2",
+      "endSnd":{"type":"end"}
+    }
+  ]
+}

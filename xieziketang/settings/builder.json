@@ -1,0 +1,28 @@
+{
+  "appKey": "",
+  "appSecret": "",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.xieziketang",
+  "privateKey": "",
+  "renderMode": "0",
+  "startScene": "383314ec-c6fc-4bbe-a350-dbb02264eed9",
+  "title": "xieziketang",
+  "webOrientation": "portrait",
+  "xxteaKey": "6f6734a5-561d-42"
+}

@@ -1,6 +1,7 @@
 import lediModel from "./model/lediModel.js";
 import Game from "./audio/Game";
 import WeixinInstance from "./weixin/WeixinInstance";
+import { WeixinAudio } from "./audio/WeixinAudio";
 
 
 const { ccclass, property } = cc._decorator;
@@ -55,6 +56,9 @@ export default class HelloWorld extends cc.Component {
 
       startAnima=true;
     onLoad() {
+
+        cc.log(document.body.clientWidth,document.body.clientHeight);
+        cc.view.setFrameSize(document.body.clientWidth,document.body.clientHeight);
         WeixinInstance.instance.initialize();
         cc.systemEvent.on("item_click",this.itemClickHandler,this);
         cc.systemEvent.on("back_click",this.backClick,this);
@@ -91,10 +95,7 @@ export default class HelloWorld extends cc.Component {
         this.startAnimation();
         console.log(result);
 
-        WeixinJSBridge.invoke('getNetworkType', {}, (e)=> {
-            this.getAudio();
-        });
-
+        new WeixinAudio(this.getAudio,this);
 
         this.MusicName.string = result.data.chapter_list[this.index].chapter_name;
 
@@ -121,7 +122,9 @@ export default class HelloWorld extends cc.Component {
     }
 
     updateProgress(s) {
-        this.mProgressBar.progress = s;
+        if(!isNaN(s)){
+            this.mProgressBar.progress = s;
+        }
     }
     startAnimation() {
         this.startAnima=true;
@@ -130,7 +133,7 @@ export default class HelloWorld extends cc.Component {
     stopAnimation() {
         this.startAnima=false;
     }
-
+    iscanClick=true;
     mmm = null;
     getAudio() {
 
@@ -143,16 +146,27 @@ export default class HelloWorld extends cc.Component {
             this.mmm = new Audio(mp3audio);
             this.mmm.addEventListener("canplay", function (e) {
                 let time = this.mmm.duration;
-               
-                var m = parseInt(time / 60);
-                var s = time % 60;
-                if (Math.round(s) >= 10) {
-                    this.mMusicTime.string = "0" + m + ":" + Math.round(s);
-                } else {
-                    this.mMusicTime.string = "0" + m + ":0" + Math.round(s);
+                if(!isNaN(time)){
+                    console.log("你好");
+                    var m = parseInt(time / 60);
+                    var s = time % 60;
+                    if (Math.round(s) >= 10) {
+                        this.mMusicTime.string = "0" + m + ":" + Math.round(s);
+                    } else {
+                        this.mMusicTime.string = "0" + m + ":0" + Math.round(s);
+                    }
                 }
 
             }.bind(this));
+
+
+            this.mmm.addEventListener("ended",function(e){
+                console.log("播放结束");
+            
+                    this.clickNext();
+                
+        }.bind(this));
+
 
             this.mmm.addEventListener("timeupdate", function (e) {
                 var m = parseInt(this.mmm.currentTime / 60);
@@ -176,7 +190,14 @@ export default class HelloWorld extends cc.Component {
     }
 
 
+    setInter(){
+        this.iscanClick=false;
 
+
+        setTimeout(() => {
+            this.iscanClick=true;
+        }, 2000);
+    }
 
     play() {
         if (this.isplay) {
@@ -198,14 +219,18 @@ export default class HelloWorld extends cc.Component {
 
 
     clickPre() {
-
-        if (this.index == 0) {
-
-        } else {
-            //startanimation
-            --this.index;
-            this.setimg();
+        if(this.iscanClick){
+            this.setInter();
+            if (this.index == 0) {
+                this.index=19;
+                this.setimg();
+            } else {
+                //startanimation
+                --this.index;
+                this.setimg();
+            }
         }
+     
 
     }
 
@@ -231,9 +256,13 @@ export default class HelloWorld extends cc.Component {
     }
 
     clickNext() {
+        if(this.iscanClick){
+            this.setInter();
             //startanimation
             ++this.index;
             this.setimg();
+        }
+      
 
     }
 

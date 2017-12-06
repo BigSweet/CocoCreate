@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import WordListModel from "./model/WordListModel";
 import WeixinInstance from "./weixin/WeixinInstance";
+import { WeixinAudio } from "./WeixinAudio";
 
 const { ccclass, property } = cc._decorator;
 
@@ -26,6 +27,9 @@ export default class HelloWorld extends cc.Component {
 
 
     onLoad() {
+		
+		  cc.log(document.body.clientWidth,document.body.clientHeight);
+        cc.view.setFrameSize(document.body.clientWidth,document.body.clientHeight);
         WeixinInstance.instance.initialize();
         var _self = this;
         WordListModel.instance.getWordList(this.success, this);
@@ -62,9 +66,7 @@ export default class HelloWorld extends cc.Component {
         this.imgCenter.node.runAction(seq);
         console.log(result);
         
-        WeixinJSBridge.invoke('getNetworkType', {}, (e)=> {
-            this.getAudio();
-        });
+        new WeixinAudio (this.getAudio,this);
 
         this.MusicDes.string = result.data.word_list[this.index].word_en_desc;
         this.MusicName.string = result.data.word_list[this.index].word_desc;
@@ -91,12 +93,17 @@ export default class HelloWorld extends cc.Component {
 
 
     clickButton(e) {
-        var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
-        // var action = cc.scaleTo(0.1, 1.2,1.2);
-        this.imgCenter.node.runAction(seq);
-        cc.log("=======>", e);
-        let result = WordListModel.instance.result;
-        this.getAudio();
+        if(this.iscanClick){
+            this.setInter();
+            var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
+            // var action = cc.scaleTo(0.1, 1.2,1.2);
+            this.imgCenter.node.runAction(seq);
+            cc.log("=======>", e);
+            let result = WordListModel.instance.result;
+            this.getAudio();
+        }
+
+      
     }
 
     getAudio(){
@@ -106,18 +113,29 @@ export default class HelloWorld extends cc.Component {
         this.audio.play();
     }
 
+    iscanClick=true;
 
+    setInter(){
+        this.iscanClick=false;
+        setTimeout(() => {
+            this.iscanClick=true;
+        }, 1000);
+    }
     clickPre() {
-
-        if (this.index == 0) {
-
-        } else {
-            var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
-            // var action = cc.scaleTo(0.1, 1.2,1.2);
-            this.imgCenter.node.runAction(seq);
-            --this.index;
-            this.setimg();
+        if(this.iscanClick){
+            this.setInter();
+            if (this.index == 0) {
+                this.index=19;
+                this.setimg();
+            } else {
+                var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
+                // var action = cc.scaleTo(0.1, 1.2,1.2);
+                this.imgCenter.node.runAction(seq);
+                --this.index;
+                this.setimg();
+            }
         }
+      
 
     }
 
@@ -137,23 +155,33 @@ export default class HelloWorld extends cc.Component {
         
     }
     centerImgClick() {
-        var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
-        // var action = cc.scaleTo(0.1, 1.2,1.2);
-        this.imgCenter.node.runAction(seq);
-        let result = WordListModel.instance.result;
-        this.getAudio();
-    }
-
-    clickNext() {
-        if (this.index == 19) {
-            WordListModel.instance.getWordList(this.success, this);
-        } else {
+        if(this.iscanClick){
+            this.setInter();
             var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
             // var action = cc.scaleTo(0.1, 1.2,1.2);
             this.imgCenter.node.runAction(seq);
-            ++this.index;
-            this.setimg();
+            let result = WordListModel.instance.result;
+            this.getAudio();
         }
+
+   
+    }
+
+    clickNext() {
+        if(this.iscanClick){
+            this.setInter();
+            if (this.index == 19) {
+                WordListModel.instance.getWordList(this.success, this);
+            } else {
+                var seq = cc.sequence(cc.scaleTo(0.1, 1.2, 1.2), cc.scaleTo(0.1, 1, 1));
+                // var action = cc.scaleTo(0.1, 1.2,1.2);
+                this.imgCenter.node.runAction(seq);
+                ++this.index;
+                this.setimg();
+            }
+        }
+
+       
 
     }
 

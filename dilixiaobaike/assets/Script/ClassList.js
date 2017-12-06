@@ -12,23 +12,22 @@ export default class ClassList extends cc.Component {
 
 
     onLoad(){
+        cc.log(document.body.clientWidth,document.body.clientHeight);
+        cc.view.setFrameSize(document.body.clientWidth,document.body.clientHeight);
         var _self = this;
         classListModel.instance.getCLassList(this.success,this);
         cc.systemEvent.on("item_click",this.itemClickHandler,this);
-        this.scrollMain.node.on('scroll-to-bottom', this.callback, this);
+        // this.scrollMain.node.on('scroll-to-bottom', this.callback, this);
     }
 
 
-    callback(){
-        console.log("滑动到顶部啦");
-    }
+   /*  callback(){
+        console.log("滑动到底部啦");
+    } */
     success(result){
-        console.log(result);
-        
         cc.loader.loadRes("prefab/Item",function(err,prefab){
             console.log("====",err,prefab);
             /**@type {[]}*/let listArr = result.data.feed_list;
-           
             for(let i = 0;i<listArr.length;++i) {
                 /**@type {cc.Node}*/let itemNode = cc.instantiate(prefab);
                 let item = itemNode.getComponent(Item);
@@ -37,8 +36,6 @@ export default class ClassList extends cc.Component {
             }
 
         }.bind(this));
-
-    
         
     }
 
