@@ -1,0 +1,28 @@
+{
+  "appKey": "",
+  "appSecret": "",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.PuzzleGame",
+  "privateKey": "",
+  "renderMode": "0",
+  "startScene": "090e5e46-2f62-4d6a-b0b4-41f0d69aaf7f",
+  "title": "PuzzleGame",
+  "webOrientation": "landscape",
+  "xxteaKey": "207e834c-da30-48"
+}

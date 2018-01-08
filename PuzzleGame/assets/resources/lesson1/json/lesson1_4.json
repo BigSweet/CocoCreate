@@ -1,0 +1,19 @@
+{
+
+  "name": "拼图游戏",
+  "game_nine_img":[ "resources/lesson1/game_4/puzzle_game_4_1.png",
+    "resources/lesson1/game_4/puzzle_game_4_2.png",
+    "resources/lesson1/game_4/puzzle_game_4_3.png",
+    "resources/lesson1/game_4/puzzle_game_4_4.png",
+    "resources/lesson1/game_4/puzzle_game_4_5.png",
+    "resources/lesson1/game_4/puzzle_game_4_6.png",
+    "resources/lesson1/game_4/puzzle_game_4_7.png",
+    "resources/lesson1/game_4/puzzle_game_4_8.png",
+    "resources/lesson1/game_4/puzzle_game_4_9.png"],
+  "game_complete_Img":"resources/lesson1/game_4/puzzle_game_4.png",
+  "game_complete_mp3_name":"1_4_alligator",
+  "item_mp3_name":"hb_a",
+  "jump_url":"http://www.baidu.com"
+
+}
+

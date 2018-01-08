@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "7c2707e3-6d8d-4738-b3c2-e59a1c373b77",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "npc_puzzle_dizz": {
+      "ver": "1.0.3",
+      "uuid": "15076663-ad4f-4496-b7cc-cc7b500ca122",
+      "rawTextureUuid": "7c2707e3-6d8d-4738-b3c2-e59a1c373b77",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 131,
+      "height": 165,
+      "rawWidth": 131,
+      "rawHeight": 165,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
