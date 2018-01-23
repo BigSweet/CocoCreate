@@ -1,0 +1,19 @@
+{
+
+  "name": "拼图游戏",
+  "game_nine_img":[ "resources/lesson2/game_4/puzzle_game_8_1.png",
+    "resources/lesson2/game_4/puzzle_game_8_2.png",
+    "resources/lesson2/game_4/puzzle_game_8_3.png",
+    "resources/lesson2/game_4/puzzle_game_8_4.png",
+    "resources/lesson2/game_4/puzzle_game_8_5.png",
+    "resources/lesson2/game_4/puzzle_game_8_6.png",
+    "resources/lesson2/game_4/puzzle_game_8_7.png",
+    "resources/lesson2/game_4/puzzle_game_8_8.png",
+    "resources/lesson2/game_4/puzzle_game_8_9.png"],
+  "game_complete_Img":"resources/lesson2/game_4/puzzle_game_8.png",
+  "game_complete_mp3_name":"4_bat",
+  "item_mp3_name":"hb_b",
+  "jump_url":"http://www.baidu.com"
+
+}
+

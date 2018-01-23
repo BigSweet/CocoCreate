@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson22/game_85/puzzle_game_85_1.png",
+        "resources/lesson22/game_85/puzzle_game_85_2.png",
+        "resources/lesson22/game_85/puzzle_game_85_3.png",
+        "resources/lesson22/game_85/puzzle_game_85_4.png",
+        "resources/lesson22/game_85/puzzle_game_85_5.png",
+        "resources/lesson22/game_85/puzzle_game_85_6.png",
+        "resources/lesson22/game_85/puzzle_game_85_7.png",
+        "resources/lesson22/game_85/puzzle_game_85_8.png",
+        "resources/lesson22/game_85/puzzle_game_85_9.png"],
+      "game_complete_Img":"resources/lesson22/game_85/puzzle_game_85.png",
+      "game_complete_mp3_name":"1_violin",
+      "item_mp3_name":"hb_v"
+
+}
+

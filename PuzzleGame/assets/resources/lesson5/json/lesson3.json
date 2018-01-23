@@ -1,0 +1,18 @@
+{
+
+  "name": "拼图游戏",
+  "game_nine_img":[ "resources/lesson5/game_19/puzzle_game_19_1.png",
+    "resources/lesson5/game_19/puzzle_game_19_2.png",
+    "resources/lesson5/game_19/puzzle_game_19_3.png",
+    "resources/lesson5/game_19/puzzle_game_19_4.png",
+    "resources/lesson5/game_19/puzzle_game_19_5.png",
+    "resources/lesson5/game_19/puzzle_game_19_6.png",
+    "resources/lesson5/game_19/puzzle_game_19_7.png",
+    "resources/lesson5/game_19/puzzle_game_19_8.png",
+    "resources/lesson5/game_19/puzzle_game_19_9.png"],
+  "game_complete_Img":"resources/lesson5/game_19/puzzle_game_19.png",
+  "game_complete_mp3_name":"3_bed",
+  "item_mp3_name":"hb_e"
+
+}
+

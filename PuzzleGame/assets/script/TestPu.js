@@ -54,14 +54,11 @@ export default class TestPu extends cc.Component {
 
     audio = null;
 
-    @property
-    json0 = "";
-    @property
+    json0 ="";
     json1 = "";
-    @property
     json2 = "";
-    @property
     json3 = "";
+
 
     __lessonIndex = 0;
 
@@ -70,14 +67,31 @@ export default class TestPu extends cc.Component {
 
     jumpUrl = null;
 
+
+    GetQueryString(name) {  
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");  
+        var r = window.location.search.substr(1).match(reg);  //获取url中"?"符后的字符串并正则匹配
+        var context = "";  
+        if (r != null)  
+             context = r[2];  
+        reg = null;  
+        r = null;  
+        return context == null || context == "" || context == "undefined" ? "" : context;  
+    }
     onLoad() {
+        let lesson=this.GetQueryString("lesson");
+        console.log(lesson+"lesson");
+        this.json0= "lesson"+lesson+"/json/lesson1.json";
+        this.json1= "lesson"+lesson+"/json/lesson2.json";
+        this.json2= "lesson"+lesson+"/json/lesson3.json";
+        this.json3= "lesson"+lesson+"/json/lesson4.json";
         cc.view.setFrameSize(document.body.clientWidth,document.body.clientHeight);
         this.gridArr = [];
         this.itemArr = [];
         cc.systemEvent.on("toCheck", this.Check, this);
         cc.systemEvent.on("loadComplete", this.imgLoadComplete, this);
         this.readJson();
-
+      
     }
 
     imgLoadIndex = 0;
@@ -86,6 +100,7 @@ export default class TestPu extends cc.Component {
         this.imgLoadIndex++;
         if (this.imgLoadIndex == 8) {
             let actionBy = cc.sequence(cc.fadeOut(2.0), cc.callFunc(() => {
+                this.setItemMoveAction();
                 cc.log("动画执行完毕", i);
             }));
             actionBy.easing(cc.easeExponentialInOut());
@@ -120,12 +135,14 @@ export default class TestPu extends cc.Component {
 
     readJson() {
         if (!this["json" + this.__lessonIndex]) {
+
+            new AudioEngineUtils("success",null);
             this.mParticleSystem1.resetSystem();
             this.mParticleSystem2.resetSystem();
             this.mParticleSystem3.resetSystem();
             this.mParticleSystem4.resetSystem();
             this.mParticleSystem5.resetSystem();
-
+    
             this.mParticleSystem1.onDestroy = this.ParticleSysDestroy.bind(this);
             this.mParticleSystem1.node.zIndex = 100;
             this.mParticleSystem2.node.zIndex = 100;
@@ -179,9 +196,12 @@ export default class TestPu extends cc.Component {
             this.gridArr.push(grid);
             this.itemArr.push(item);
         }
+      
+
+    }
 
 
-        setTimeout(() => {
+    setItemMoveAction(){
             for (let i = 0; i < this.itemArr.length; i++) {
                 let movex = this.RandomNumBoth(this.imgNode.x - 120, this.imgNode.x + 120);
                 let movey = this.RandomNumBoth(this.imgNode.y - 200, this.imgNode.y + 200);
@@ -198,8 +218,6 @@ export default class TestPu extends cc.Component {
                 let mzindex = this.RandomNumBoth(1, 9);
                 this.itemArr[i].node.zIndex = mzindex;
             }
-        }, 2000);
-
 
     }
 

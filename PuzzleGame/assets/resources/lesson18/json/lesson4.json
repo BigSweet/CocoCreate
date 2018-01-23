@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson18/game_72/puzzle_game_72_1.png",
+        "resources/lesson18/game_72/puzzle_game_72_2.png",
+        "resources/lesson18/game_72/puzzle_game_72_3.png",
+        "resources/lesson18/game_72/puzzle_game_72_4.png",
+        "resources/lesson18/game_72/puzzle_game_72_5.png",
+        "resources/lesson18/game_72/puzzle_game_72_6.png",
+        "resources/lesson18/game_72/puzzle_game_72_7.png",
+        "resources/lesson18/game_72/puzzle_game_72_8.png",
+        "resources/lesson18/game_72/puzzle_game_72_9.png"],
+      "game_complete_Img":"resources/lesson18/game_72/puzzle_game_72.png",
+      "game_complete_mp3_name":"4_rose",
+      "item_mp3_name":"hb_r"
+
+}
+

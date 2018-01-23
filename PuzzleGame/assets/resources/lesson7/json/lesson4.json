@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson7/game_28/puzzle_game_28_1.png",
+        "resources/lesson7/game_28/puzzle_game_28_2.png",
+        "resources/lesson7/game_28/puzzle_game_28_3.png",
+        "resources/lesson7/game_28/puzzle_game_28_4.png",
+        "resources/lesson7/game_28/puzzle_game_28_5.png",
+        "resources/lesson7/game_28/puzzle_game_28_6.png",
+        "resources/lesson7/game_28/puzzle_game_28_7.png",
+        "resources/lesson7/game_28/puzzle_game_28_8.png",
+        "resources/lesson7/game_28/puzzle_game_28_9.png"],
+      "game_complete_Img":"resources/lesson7/game_28/puzzle_game_28.png",
+      "game_complete_mp3_name":"4_glasses",
+      "item_mp3_name":"hb_g"
+
+}
+

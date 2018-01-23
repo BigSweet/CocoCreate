@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson16/game_64/puzzle_game_64_1.png",
+        "resources/lesson16/game_64/puzzle_game_64_2.png",
+        "resources/lesson16/game_64/puzzle_game_64_3.png",
+        "resources/lesson16/game_64/puzzle_game_64_4.png",
+        "resources/lesson16/game_64/puzzle_game_64_5.png",
+        "resources/lesson16/game_64/puzzle_game_64_6.png",
+        "resources/lesson16/game_64/puzzle_game_64_7.png",
+        "resources/lesson16/game_64/puzzle_game_64_8.png",
+        "resources/lesson16/game_64/puzzle_game_64_9.png"],
+      "game_complete_Img":"resources/lesson16/game_64/puzzle_game_64.png",
+      "game_complete_mp3_name":"4_parrot",
+      "item_mp3_name":"hb_p"
+
+}
+

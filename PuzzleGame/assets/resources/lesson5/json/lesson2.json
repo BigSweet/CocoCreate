@@ -1,0 +1,18 @@
+{
+
+  "name": "拼图游戏",
+  "game_nine_img":[ "resources/lesson5/game_18/puzzle_game_18_1.png",
+    "resources/lesson5/game_18/puzzle_game_18_2.png",
+    "resources/lesson5/game_18/puzzle_game_18_3.png",
+    "resources/lesson5/game_18/puzzle_game_18_4.png",
+    "resources/lesson5/game_18/puzzle_game_18_5.png",
+    "resources/lesson5/game_18/puzzle_game_18_6.png",
+    "resources/lesson5/game_18/puzzle_game_18_7.png",
+    "resources/lesson5/game_18/puzzle_game_18_8.png",
+    "resources/lesson5/game_18/puzzle_game_18_9.png"],
+  "game_complete_Img":"resources/lesson5/game_18/puzzle_game_18.png",
+  "game_complete_mp3_name":"2_elephant",
+  "item_mp3_name":"hb_e"
+
+}
+

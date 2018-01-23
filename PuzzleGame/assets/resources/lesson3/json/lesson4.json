@@ -1,0 +1,19 @@
+{
+
+  "name": "拼图游戏",
+  "game_nine_img":[ "resources/lesson3/game_12/puzzle_game_12_1.png",
+    "resources/lesson3/game_12/puzzle_game_12_2.png",
+    "resources/lesson3/game_12/puzzle_game_12_3.png",
+    "resources/lesson3/game_12/puzzle_game_12_4.png",
+    "resources/lesson3/game_12/puzzle_game_12_5.png",
+    "resources/lesson3/game_12/puzzle_game_12_6.png",
+    "resources/lesson3/game_12/puzzle_game_12_7.png",
+    "resources/lesson3/game_12/puzzle_game_12_8.png",
+    "resources/lesson3/game_12/puzzle_game_12_9.png"],
+  "game_complete_Img":"resources/lesson3/game_12/puzzle_game_12.png",
+  "game_complete_mp3_name":"4_cookie",
+  "item_mp3_name":"hb_c",
+  "jump_url":"http://www.baidu.com"
+
+}
+

@@ -1,0 +1,18 @@
+{
+
+  "name": "拼图游戏",
+  "game_nine_img":[ "resources/lesson2/game_3/puzzle_game_7_1.png",
+    "resources/lesson2/game_3/puzzle_game_7_2.png",
+    "resources/lesson2/game_3/puzzle_game_7_3.png",
+    "resources/lesson2/game_3/puzzle_game_7_4.png",
+    "resources/lesson2/game_3/puzzle_game_7_5.png",
+    "resources/lesson2/game_3/puzzle_game_7_6.png",
+    "resources/lesson2/game_3/puzzle_game_7_7.png",
+    "resources/lesson2/game_3/puzzle_game_7_8.png",
+    "resources/lesson2/game_3/puzzle_game_7_9.png"],
+  "game_complete_Img":"resources/lesson2/game_3/puzzle_game_7.png",
+  "game_complete_mp3_name":"3_bee",
+  "item_mp3_name":"hb_b"
+
+}
+

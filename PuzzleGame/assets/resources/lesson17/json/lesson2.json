@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson17/game_66/puzzle_game_66_1.png",
+        "resources/lesson17/game_66/puzzle_game_66_2.png",
+        "resources/lesson17/game_66/puzzle_game_66_3.png",
+        "resources/lesson17/game_66/puzzle_game_66_4.png",
+        "resources/lesson17/game_66/puzzle_game_66_5.png",
+        "resources/lesson17/game_66/puzzle_game_66_6.png",
+        "resources/lesson17/game_66/puzzle_game_66_7.png",
+        "resources/lesson17/game_66/puzzle_game_66_8.png",
+        "resources/lesson17/game_66/puzzle_game_66_9.png"],
+      "game_complete_Img":"resources/lesson17/game_66/puzzle_game_66.png",
+      "game_complete_mp3_name":"2_quilt",
+      "item_mp3_name":"hb_q"
+
+}
+

@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson20/game_77/puzzle_game_77_1.png",
+        "resources/lesson20/game_77/puzzle_game_77_2.png",
+        "resources/lesson20/game_77/puzzle_game_77_3.png",
+        "resources/lesson20/game_77/puzzle_game_77_4.png",
+        "resources/lesson20/game_77/puzzle_game_77_5.png",
+        "resources/lesson20/game_77/puzzle_game_77_6.png",
+        "resources/lesson20/game_77/puzzle_game_77_7.png",
+        "resources/lesson20/game_77/puzzle_game_77_8.png",
+        "resources/lesson20/game_77/puzzle_game_77_9.png"],
+      "game_complete_Img":"resources/lesson20/game_77/puzzle_game_77.png",
+      "game_complete_mp3_name":"1_tiger",
+      "item_mp3_name":"hb_t"
+
+}
+

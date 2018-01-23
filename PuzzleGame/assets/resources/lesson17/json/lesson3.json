@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson17/game_67/puzzle_game_67_1.png",
+        "resources/lesson17/game_67/puzzle_game_67_2.png",
+        "resources/lesson17/game_67/puzzle_game_67_3.png",
+        "resources/lesson17/game_67/puzzle_game_67_4.png",
+        "resources/lesson17/game_67/puzzle_game_67_5.png",
+        "resources/lesson17/game_67/puzzle_game_67_6.png",
+        "resources/lesson17/game_67/puzzle_game_67_7.png",
+        "resources/lesson17/game_67/puzzle_game_67_8.png",
+        "resources/lesson17/game_67/puzzle_game_67_9.png"],
+      "game_complete_Img":"resources/lesson17/game_67/puzzle_game_67.png",
+      "game_complete_mp3_name":"3_quack",
+      "item_mp3_name":"hb_q"
+
+}
+

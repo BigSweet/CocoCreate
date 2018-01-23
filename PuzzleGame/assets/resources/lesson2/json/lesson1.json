@@ -1,0 +1,19 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ 
+        "resources/lesson2/game_1/puzzle_game_5_1.png",
+        "resources/lesson2/game_1/puzzle_game_5_2.png",
+        "resources/lesson2/game_1/puzzle_game_5_3.png",
+        "resources/lesson2/game_1/puzzle_game_5_4.png",
+        "resources/lesson2/game_1/puzzle_game_5_5.png",
+        "resources/lesson2/game_1/puzzle_game_5_6.png",
+        "resources/lesson2/game_1/puzzle_game_5_7.png",
+        "resources/lesson2/game_1/puzzle_game_5_8.png",
+        "resources/lesson2/game_1/puzzle_game_5_9.png"],
+      "game_complete_Img":"resources/lesson2/game_1/puzzle_game_5.png",
+      "game_complete_mp3_name":"1_bird",
+      "item_mp3_name":"hb_b"
+
+}
+

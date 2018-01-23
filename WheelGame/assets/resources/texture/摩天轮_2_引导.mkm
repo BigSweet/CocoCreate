@@ -1,0 +1,9 @@
+<MKM version="2.0" minAppVer="2.0.0" imageFileUrl="">
+  <Marks>
+    <TextMark x="988" y="82" color="16711680" offsetX="48" offsetY="20" defaultDirection="5" direction="5" textMaxWidth="161" text="图片均放大至2倍：&#xD;1、wheel_base_l&#xD;2、wheel_case1_l&#xD;3、wheel_circle_l"/>
+    <TextMark x="737" y="399" color="16711680" offsetX="45" offsetY="30" defaultDirection="6" direction="6" textMaxWidth="241" text="引导图：当画面静止5秒以上时，播放"/>
+    <RectMark x="262" y="72" color="16711680" offsetX="289" offsetY="220"/>
+    <RectMark x="220" y="425" color="16711680" offsetX="205" offsetY="80"/>
+    <RectMark x="28" y="414" color="16711680" offsetX="198" offsetY="226"/>
+  </Marks>
+</MKM>

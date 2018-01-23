@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson17/game_68/puzzle_game_68_1.png",
+        "resources/lesson17/game_68/puzzle_game_68_2.png",
+        "resources/lesson17/game_68/puzzle_game_68_3.png",
+        "resources/lesson17/game_68/puzzle_game_68_4.png",
+        "resources/lesson17/game_68/puzzle_game_68_5.png",
+        "resources/lesson17/game_68/puzzle_game_68_6.png",
+        "resources/lesson17/game_68/puzzle_game_68_7.png",
+        "resources/lesson17/game_68/puzzle_game_68_8.png",
+        "resources/lesson17/game_68/puzzle_game_68_9.png"],
+      "game_complete_Img":"resources/lesson17/game_68/puzzle_game_68.png",
+      "game_complete_mp3_name":"4_quay",
+      "item_mp3_name":"hb_q"
+
+}
+

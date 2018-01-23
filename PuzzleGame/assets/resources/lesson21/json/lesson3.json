@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson21/game_83/puzzle_game_83_1.png",
+        "resources/lesson21/game_83/puzzle_game_83_2.png",
+        "resources/lesson21/game_83/puzzle_game_83_3.png",
+        "resources/lesson21/game_83/puzzle_game_83_4.png",
+        "resources/lesson21/game_83/puzzle_game_83_5.png",
+        "resources/lesson21/game_83/puzzle_game_83_6.png",
+        "resources/lesson21/game_83/puzzle_game_83_7.png",
+        "resources/lesson21/game_83/puzzle_game_83_8.png",
+        "resources/lesson21/game_83/puzzle_game_83_9.png"],
+      "game_complete_Img":"resources/lesson21/game_83/puzzle_game_83.png",
+      "game_complete_mp3_name":"3_uncle",
+      "item_mp3_name":"hb_u"
+
+}
+

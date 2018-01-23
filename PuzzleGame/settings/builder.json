@@ -8,7 +8,7 @@
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": true,
   "jailbreakPlatform": false,
-  "md5Cache": true,
+  "md5Cache": false,
   "mergeStartScene": false,
   "oauthLoginServer": "",
   "optimizeHotUpdate": false,
@@ -24,5 +24,9 @@
   "startScene": "090e5e46-2f62-4d6a-b0b4-41f0d69aaf7f",
   "title": "PuzzleGame",
   "webOrientation": "landscape",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
   "xxteaKey": "207e834c-da30-48"
 }

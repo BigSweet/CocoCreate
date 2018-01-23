@@ -1,0 +1,19 @@
+{
+
+  "name": "拼图游戏",
+  "game_nine_img":[ "resources/lesson6/game_24/puzzle_game_24_1.png",
+    "resources/lesson6/game_24/puzzle_game_24_2.png",
+    "resources/lesson6/game_24/puzzle_game_24_3.png",
+    "resources/lesson6/game_24/puzzle_game_24_4.png",
+    "resources/lesson6/game_24/puzzle_game_24_5.png",
+    "resources/lesson6/game_24/puzzle_game_24_6.png",
+    "resources/lesson6/game_24/puzzle_game_24_7.png",
+    "resources/lesson6/game_24/puzzle_game_24_8.png",
+    "resources/lesson6/game_24/puzzle_game_24_9.png"],
+  "game_complete_Img":"resources/lesson6/game_24/puzzle_game_24.png",
+  "game_complete_mp3_name":"4_frog",
+  "item_mp3_name":"hb_f",
+  "jump_url":"http://www.baidu.com"
+
+}
+

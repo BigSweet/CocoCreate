@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson8/game_32/puzzle_game_32_1.png",
+        "resources/lesson8/game_32/puzzle_game_32_2.png",
+        "resources/lesson8/game_32/puzzle_game_32_3.png",
+        "resources/lesson8/game_32/puzzle_game_32_4.png",
+        "resources/lesson8/game_32/puzzle_game_32_5.png",
+        "resources/lesson8/game_32/puzzle_game_32_6.png",
+        "resources/lesson8/game_32/puzzle_game_32_7.png",
+        "resources/lesson8/game_32/puzzle_game_32_8.png",
+        "resources/lesson8/game_32/puzzle_game_32_9.png"],
+      "game_complete_Img":"resources/lesson8/game_32/puzzle_game_32.png",
+      "game_complete_mp3_name":"4_hen",
+      "item_mp3_name":"hb_h"
+
+}
+

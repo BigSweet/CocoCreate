@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson11/game_41/puzzle_game_41_1.png",
+        "resources/lesson11/game_41/puzzle_game_41_2.png",
+        "resources/lesson11/game_41/puzzle_game_41_3.png",
+        "resources/lesson11/game_41/puzzle_game_41_4.png",
+        "resources/lesson11/game_41/puzzle_game_41_5.png",
+        "resources/lesson11/game_41/puzzle_game_41_6.png",
+        "resources/lesson11/game_41/puzzle_game_41_7.png",
+        "resources/lesson11/game_41/puzzle_game_41_8.png",
+        "resources/lesson11/game_41/puzzle_game_41_9.png"],
+      "game_complete_Img":"resources/lesson11/game_41/puzzle_game_41.png",
+      "game_complete_mp3_name":"1_kite",
+      "item_mp3_name":"hb_k"
+
+}
+

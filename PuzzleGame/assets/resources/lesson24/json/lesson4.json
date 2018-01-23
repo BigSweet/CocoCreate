@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson24/game_96/puzzle_game_96_1.png",
+        "resources/lesson24/game_96/puzzle_game_96_2.png",
+        "resources/lesson24/game_96/puzzle_game_96_3.png",
+        "resources/lesson24/game_96/puzzle_game_96_4.png",
+        "resources/lesson24/game_96/puzzle_game_96_5.png",
+        "resources/lesson24/game_96/puzzle_game_96_6.png",
+        "resources/lesson24/game_96/puzzle_game_96_7.png",
+        "resources/lesson24/game_96/puzzle_game_96_8.png",
+        "resources/lesson24/game_96/puzzle_game_96_9.png"],
+      "game_complete_Img":"resources/lesson24/game_96/puzzle_game_96.png",
+      "game_complete_mp3_name":"4_taxi",
+      "item_mp3_name":"hb_x"
+
+}
+

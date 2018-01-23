@@ -1,0 +1,19 @@
+{
+
+  "name": "拼图游戏",
+  "game_nine_img":[ "resources/lesson5/game_20/puzzle_game_20_1.png",
+    "resources/lesson5/game_20/puzzle_game_20_2.png",
+    "resources/lesson5/game_20/puzzle_game_20_3.png",
+    "resources/lesson5/game_20/puzzle_game_20_4.png",
+    "resources/lesson5/game_20/puzzle_game_20_5.png",
+    "resources/lesson5/game_20/puzzle_game_20_6.png",
+    "resources/lesson5/game_20/puzzle_game_20_7.png",
+    "resources/lesson5/game_20/puzzle_game_20_8.png",
+    "resources/lesson5/game_20/puzzle_game_20_9.png"],
+  "game_complete_Img":"resources/lesson5/game_20/puzzle_game_20.png",
+  "game_complete_mp3_name":"4_jet",
+  "item_mp3_name":"hb_e",
+  "jump_url":"http://www.baidu.com"
+
+}
+

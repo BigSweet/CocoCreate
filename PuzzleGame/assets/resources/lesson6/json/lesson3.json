@@ -1,0 +1,18 @@
+{
+
+  "name": "拼图游戏",
+  "game_nine_img":[ "resources/lesson6/game_23/puzzle_game_23_1.png",
+    "resources/lesson6/game_23/puzzle_game_23_2.png",
+    "resources/lesson6/game_23/puzzle_game_23_3.png",
+    "resources/lesson6/game_23/puzzle_game_23_4.png",
+    "resources/lesson6/game_23/puzzle_game_23_5.png",
+    "resources/lesson6/game_23/puzzle_game_23_6.png",
+    "resources/lesson6/game_23/puzzle_game_23_7.png",
+    "resources/lesson6/game_23/puzzle_game_23_8.png",
+    "resources/lesson6/game_23/puzzle_game_23_9.png"],
+  "game_complete_Img":"resources/lesson6/game_23/puzzle_game_23.png",
+  "game_complete_mp3_name":"3_fish",
+  "item_mp3_name":"hb_f"
+
+}
+

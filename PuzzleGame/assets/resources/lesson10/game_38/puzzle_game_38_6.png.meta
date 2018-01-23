@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "21c5b375-00c0-4d5c-891e-49ed2c710ce3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "puzzle_game_38_6": {
+      "ver": "1.0.3",
+      "uuid": "4c34cd98-3e07-4a8c-bec4-e52582527e41",
+      "rawTextureUuid": "21c5b375-00c0-4d5c-891e-49ed2c710ce3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 212,
+      "height": 358,
+      "rawWidth": 212,
+      "rawHeight": 358,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

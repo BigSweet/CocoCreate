@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "26f38eae-027b-4fcf-96ba-2b3e102cb772",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "摩天轮_2_引导_spec": {
+      "ver": "1.0.3",
+      "uuid": "3a67c00a-eb9e-4773-b684-165a20d461f1",
+      "rawTextureUuid": "26f38eae-027b-4fcf-96ba-2b3e102cb772",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1136,
+      "height": 640,
+      "rawWidth": 1136,
+      "rawHeight": 640,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson15/game_59/puzzle_game_59_1.png",
+        "resources/lesson15/game_59/puzzle_game_59_2.png",
+        "resources/lesson15/game_59/puzzle_game_59_3.png",
+        "resources/lesson15/game_59/puzzle_game_59_4.png",
+        "resources/lesson15/game_59/puzzle_game_59_5.png",
+        "resources/lesson15/game_59/puzzle_game_59_6.png",
+        "resources/lesson15/game_59/puzzle_game_59_7.png",
+        "resources/lesson15/game_59/puzzle_game_59_8.png",
+        "resources/lesson15/game_59/puzzle_game_59_9.png"],
+      "game_complete_Img":"resources/lesson15/game_59/puzzle_game_59.png",
+      "game_complete_mp3_name":"3_olive",
+      "item_mp3_name":"hb_o"
+
+}
+

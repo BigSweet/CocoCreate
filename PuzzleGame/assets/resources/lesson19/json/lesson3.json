@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson19/game_75/puzzle_game_75_1.png",
+        "resources/lesson19/game_75/puzzle_game_75_2.png",
+        "resources/lesson19/game_75/puzzle_game_75_3.png",
+        "resources/lesson19/game_75/puzzle_game_75_4.png",
+        "resources/lesson19/game_75/puzzle_game_75_5.png",
+        "resources/lesson19/game_75/puzzle_game_75_6.png",
+        "resources/lesson19/game_75/puzzle_game_75_7.png",
+        "resources/lesson19/game_75/puzzle_game_75_8.png",
+        "resources/lesson19/game_75/puzzle_game_75_9.png"],
+      "game_complete_Img":"resources/lesson19/game_75/puzzle_game_75.png",
+      "game_complete_mp3_name":"3_snail",
+      "item_mp3_name":"hb_s"
+
+}
+

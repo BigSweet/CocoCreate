@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson23/game_90/puzzle_game_90_1.png",
+        "resources/lesson23/game_90/puzzle_game_90_2.png",
+        "resources/lesson23/game_90/puzzle_game_90_3.png",
+        "resources/lesson23/game_90/puzzle_game_90_4.png",
+        "resources/lesson23/game_90/puzzle_game_90_5.png",
+        "resources/lesson23/game_90/puzzle_game_90_6.png",
+        "resources/lesson23/game_90/puzzle_game_90_7.png",
+        "resources/lesson23/game_90/puzzle_game_90_8.png",
+        "resources/lesson23/game_90/puzzle_game_90_9.png"],
+      "game_complete_Img":"resources/lesson23/game_90/puzzle_game_90.png",
+      "game_complete_mp3_name":"2_world",
+      "item_mp3_name":"hb_w"
+
+}
+

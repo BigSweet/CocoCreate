@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson8/game_29/puzzle_game_29_1.png",
+        "resources/lesson8/game_29/puzzle_game_29_2.png",
+        "resources/lesson8/game_29/puzzle_game_29_3.png",
+        "resources/lesson8/game_29/puzzle_game_29_4.png",
+        "resources/lesson8/game_29/puzzle_game_29_5.png",
+        "resources/lesson8/game_29/puzzle_game_29_6.png",
+        "resources/lesson8/game_29/puzzle_game_29_7.png",
+        "resources/lesson8/game_29/puzzle_game_29_8.png",
+        "resources/lesson8/game_29/puzzle_game_29_9.png"],
+      "game_complete_Img":"resources/lesson8/game_29/puzzle_game_29.png",
+      "game_complete_mp3_name":"1_horse",
+      "item_mp3_name":"hb_h"
+
+}
+

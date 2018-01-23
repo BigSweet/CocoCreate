@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson9/game_33/puzzle_game_33_1.png",
+        "resources/lesson9/game_33/puzzle_game_33_2.png",
+        "resources/lesson9/game_33/puzzle_game_33_3.png",
+        "resources/lesson9/game_33/puzzle_game_33_4.png",
+        "resources/lesson9/game_33/puzzle_game_33_5.png",
+        "resources/lesson9/game_33/puzzle_game_33_6.png",
+        "resources/lesson9/game_33/puzzle_game_33_7.png",
+        "resources/lesson9/game_33/puzzle_game_33_8.png",
+        "resources/lesson9/game_33/puzzle_game_33_9.png"],
+      "game_complete_Img":"resources/lesson9/game_33/puzzle_game_33.png",
+      "game_complete_mp3_name":"1_insect",
+      "item_mp3_name":"hb_i"
+
+}
+

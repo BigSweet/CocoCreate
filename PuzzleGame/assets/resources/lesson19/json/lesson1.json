@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson19/game_73/puzzle_game_73_1.png",
+        "resources/lesson19/game_73/puzzle_game_73_2.png",
+        "resources/lesson19/game_73/puzzle_game_73_3.png",
+        "resources/lesson19/game_73/puzzle_game_73_4.png",
+        "resources/lesson19/game_73/puzzle_game_73_5.png",
+        "resources/lesson19/game_73/puzzle_game_73_6.png",
+        "resources/lesson19/game_73/puzzle_game_73_7.png",
+        "resources/lesson19/game_73/puzzle_game_73_8.png",
+        "resources/lesson19/game_73/puzzle_game_73_9.png"],
+      "game_complete_Img":"resources/lesson19/game_73/puzzle_game_73.png",
+      "game_complete_mp3_name":"1_snake",
+      "item_mp3_name":"hb_s"
+
+}
+

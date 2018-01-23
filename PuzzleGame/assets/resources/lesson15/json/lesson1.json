@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson15/game_57/puzzle_game_57_1.png",
+        "resources/lesson15/game_57/puzzle_game_57_2.png",
+        "resources/lesson15/game_57/puzzle_game_57_3.png",
+        "resources/lesson15/game_57/puzzle_game_57_4.png",
+        "resources/lesson15/game_57/puzzle_game_57_5.png",
+        "resources/lesson15/game_57/puzzle_game_57_6.png",
+        "resources/lesson15/game_57/puzzle_game_57_7.png",
+        "resources/lesson15/game_57/puzzle_game_57_8.png",
+        "resources/lesson15/game_57/puzzle_game_57_9.png"],
+      "game_complete_Img":"resources/lesson15/game_57/puzzle_game_57.png",
+      "game_complete_mp3_name":"1_octopus",
+      "item_mp3_name":"hb_o"
+
+}
+

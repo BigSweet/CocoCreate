@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "bee919d3-c826-4ccd-aad3-0c1d5ed22409",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "摩天轮_1_剧情_spec": {
+      "ver": "1.0.3",
+      "uuid": "d020a3b8-fbb7-483c-bbe9-ff2ebf1df061",
+      "rawTextureUuid": "bee919d3-c826-4ccd-aad3-0c1d5ed22409",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1136,
+      "height": 640,
+      "rawWidth": 1136,
+      "rawHeight": 640,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

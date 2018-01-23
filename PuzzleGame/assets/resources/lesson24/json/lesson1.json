@@ -1,0 +1,18 @@
+{
+  
+      "name": "拼图游戏",
+      "game_nine_img":[ "resources/lesson24/game_93/puzzle_game_93_1.png",
+        "resources/lesson24/game_93/puzzle_game_93_2.png",
+        "resources/lesson24/game_93/puzzle_game_93_3.png",
+        "resources/lesson24/game_93/puzzle_game_93_4.png",
+        "resources/lesson24/game_93/puzzle_game_93_5.png",
+        "resources/lesson24/game_93/puzzle_game_93_6.png",
+        "resources/lesson24/game_93/puzzle_game_93_7.png",
+        "resources/lesson24/game_93/puzzle_game_93_8.png",
+        "resources/lesson24/game_93/puzzle_game_93_9.png"],
+      "game_complete_Img":"resources/lesson24/game_93/puzzle_game_93.png",
+      "game_complete_mp3_name":"1_fox",
+      "item_mp3_name":"hb_x"
+
+}
+
